@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Naveetha's Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- 🌙 Dark Mode Toggle -->
+  <button id="dark-mode-toggle">🌙 Dark Mode</button>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <a href="#welcome-section">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a id="profile-link" href="https://www.linkedin.com/in/naveetha-thaslim-7a305b320" target="_blank">LinkedIn</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Welcome -->
+  <section id="welcome-section">
+    <h1>Hi, I'm Naveetha Thaslim</h1>
+    <p>3rd Year CSBS Engineer | Future Ethical Hacker | Dreaming Big</p>
+    <a href="resume.pdf" download class="resume-btn">📄 Download Resume</a>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a student from Mohamed Sathak Engineering College. I love building things with Python, learning cyber security, and working towards becoming an ethical hacker.</p> 
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects & Ideas</h2>
+
+    <div class="project-tile">
+      <p><strong>📱 Yield Max – Smart Farming App</strong></p>
+      <p>Predicts crop, fertilizer, water usage, and insurance. Built with Python + ML.</p>
+    </div>
+
+    <div class="project-tile">
+      <p><strong>🧠 Brain Tumor Detection</strong></p>
+      <p>Internship project using CNN and VGG16 for MRI image classification.</p>
+    </div>
+
+    <div class="project-tile">
+      <p><strong>🌊 Whale Translator (In Progress)</strong></p>
+      <p>Using ML to decode whale sounds into human language.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>✅ Python (Basic to Intermediate)</li>
+      <li>✅ Machine Learning with GUVI</li>
+      <li>✅ Ethical Hacking Fundamentals</li>
+      <li>✅ Streamlit</li>
+      <li>✅ Discipline with Big Dreams</li>
+    </ul>
+  </section>
+
+  <!-- 📬 Contact -->
+<section id="contact">
+    <h2>Contact Me</h2>
+  
+    <form>
+      <!-- Name -->
+      <label for="name">Name</label><br />
+      <input type="text" id="name" name="name" placeholder="Your Name" required /><br /><br />
+  
+      <!-- Email -->
+      <label for="email">Email</label><br />
+      <input type="email" id="email" name="email" placeholder="Your Email" required /><br /><br />
+  
+      <!-- Message -->
+      <label for="message">Message</label><br />
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea><br /><br />
+  
+      <!-- Button -->
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
+  
+
+  <!-- 💡 JavaScript for Dark Mode -->
+  <script>
+    const toggle = document.getElementById('dark-mode-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+
+</body>
+</html>
