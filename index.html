@@ -1,102 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Naveetha's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naveetha Thaslim's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-  <!-- 🌙 Dark Mode Toggle -->
-  <button id="dark-mode-toggle">🌙 Dark Mode</button>
-
   <!-- Navbar -->
-  <nav id="navbar">
-    <a href="#welcome-section">Home</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a id="profile-link" href="https://www.linkedin.com/in/naveetha-thaslim-7a305b320" target="_blank">LinkedIn</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <header>
+    <nav id="navbar">
+      <div id="logo">
+        <h2>Naveetha</h2>
+      </div>
+      <ul>
+        <li><a href="#welcome-section">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- Welcome -->
-  <section id="welcome-section">
-    <h1>Hi, I'm Naveetha Thaslim</h1>
-    <p>3rd Year CSBS Engineer | Future Ethical Hacker | Dreaming Big</p>
-    <a href="resume.pdf" download class="resume-btn">📄 Download Resume</a>
+  <section id="welcome-section" class="section welcome">
+    <div class="container">
+      <h1>Hi, I'm Naveetha Thaslim</h1>
+      <p>3rd Year CSBS Engineer | Future Ethical Hacker | Dreaming Big ✨</p>
+    </div>
   </section>
 
   <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m a student from Mohamed Sathak Engineering College. I love building things with Python, learning cyber security, and working towards becoming an ethical hacker.</p> 
+  <section id="about" class="section about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I’m a passionate student from Mohamed Sathak Engineering College, with a keen interest in Python, cyber security, and ethical hacking. My journey in technology continues as I build and learn new things every day!</p>
+    </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects">
-    <h2>Projects & Ideas</h2>
-
-    <div class="project-tile">
-      <p><strong>📱 Yield Max – Smart Farming App</strong></p>
-      <p>Predicts crop, fertilizer, water usage, and insurance. Built with Python + ML.</p>
-    </div>
-
-    <div class="project-tile">
-      <p><strong>🧠 Brain Tumor Detection</strong></p>
-      <p>Internship project using CNN and VGG16 for MRI image classification.</p>
-    </div>
-
-    <div class="project-tile">
-      <p><strong>🌊 Whale Translator (In Progress)</strong></p>
-      <p>Using ML to decode whale sounds into human language.</p>
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project-tile">
+        <p><strong>📱 Yield Max – Smart Farming App</strong></p>
+        <p>Predicts crop, fertilizer, water usage, and insurance. Built with Python & Machine Learning.</p>
+      </div>
+      <div class="project-tile">
+        <p><strong>🧠 Brain Tumor Detection</strong></p>
+        <p>Internship project using CNN and VGG16 for MRI image classification.</p>
+      </div>
+      <div class="project-tile">
+        <p><strong>🌊 Whale Translator (In Progress)</strong></p>
+        <p>Using ML to decode whale sounds into human language.</p>
+      </div>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/YOUR-ID-HERE" target="_blank" class="btn">Visit my LinkedIn</a>
+        <a href="YOUR-RESUME-LINK-HERE" target="_blank" class="btn">Download My Resume</a>
+      </div>
     </div>
   </section>
 
   <!-- Skills -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>✅ Python (Basic to Intermediate)</li>
-      <li>✅ Machine Learning with GUVI</li>
-      <li>✅ Ethical Hacking Fundamentals</li>
-      <li>✅ Streamlit</li>
-      <li>✅ Discipline with Big Dreams</li>
-    </ul>
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Python (Intermediate)</li>
+        <li>Machine Learning</li>
+        <li>Ethical Hacking</li>
+        <li>Streamlit</li>
+        <li>Time Management</li>
+      </ul>
+    </div>
   </section>
 
-  <!-- 📬 Contact -->
-<section id="contact">
-    <h2>Contact Me</h2>
-  
-    <form>
-      <!-- Name -->
-      <label for="name">Name</label><br />
-      <input type="text" id="name" name="name" placeholder="Your Name" required /><br /><br />
-  
-      <!-- Email -->
-      <label for="email">Email</label><br />
-      <input type="email" id="email" name="email" placeholder="Your Email" required /><br /><br />
-  
-      <!-- Message -->
-      <label for="message">Message</label><br />
-      <textarea id="message" name="message" placeholder="Your Message" required></textarea><br /><br />
-  
-      <!-- Button -->
-      <button type="submit">Send Message</button>
-    </form>
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
   </section>
-  
-  
 
-  <!-- 💡 JavaScript for Dark Mode -->
-  <script>
-    const toggle = document.getElementById('dark-mode-toggle');
-    toggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-    });
-  </script>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Made with ❤️ by Naveetha Thaslim | © 2025</p>
+    </div>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
+
 </html>
